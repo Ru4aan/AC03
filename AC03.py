@@ -52,24 +52,24 @@ class Testes(TestCase):
 
     def test_divisao(self):
         dividindo = Calculadora()
-        self.assertEqual(dividindo.calcular(10, 5, 'divisao'), 2)
+        self.assertEqual(dividindo.calcular(20, 5, 'divisao'), 4)
 
     def test_soma(self):
         somando = Calculadora()
-        self.assertEqual(somando.calcular(5, 5, 'soma'), 10)
+        self.assertEqual(somando.calcular(7, 5, 'soma'), 12)
 
     def test_subtracao(self):
         calcular = Calculadora()
-        self.assertEqual(calcular.calcular(5, 6, 'subtracao'), -1)
+        self.assertEqual(calcular.calcular(3, 6, 'subtracao'), -3)
     
     def test_multiplicacao(self):
         calcular = Calculadora()
-        self.assertEqual(calcular.calcular(5, 5, 'multiplicacao'), 25)
+        self.assertEqual(calcular.calcular(3, 5, 'multiplicacao'), 15)
 
         
 
 duvida = Calculadora()
-x = duvida.calcular(5, 5, 'soma')
+x = duvida.calcular(7, 5, 'soma')
 
 
 if __name__ == '__main__':
